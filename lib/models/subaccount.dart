@@ -5,11 +5,13 @@ class SubAccount {
   double? transactionPercentage;
   double? transactionCharge;
 
-  SubAccount(
-      {required this.id,
-      this.transactionSplitRatio,
-      this.transactionChargeType,
-      this.transactionPercentage});
+  SubAccount({
+    required this.id,
+    this.transactionSplitRatio,
+    this.transactionChargeType,
+    this.transactionPercentage,
+    this.transactionCharge,
+  });
 
   /// Converts this instance to json
   Map<String, dynamic> toJson() {
